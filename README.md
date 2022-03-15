@@ -26,10 +26,10 @@ TieredImageNet is also a subset of ImageNet, which includes 608 classes from 34 
 
 
 ### FC100 Dataset
-FC100 is a few-shot classification dataset built on CIFAR100. We follow the split division proposed in [TADAM](https://papers.nips.cc/paper/7352-tadam-task-dependent-adaptive-metric-for-improved-few-shot-learning.pdf), where 36 super-classes were divided into 12 (including 60 classes), 4 (including 20 classes), 4 (including 20 classes), for meta-training, meta-validation and meta-testing, respectively, and each class contains 600 images.
+FC100 is a few-shot classification dataset built on CIFAR100. We follow the split division proposed in [TADAM](https://papers.nips.cc/paper/7352-tadam-task-dependent-adaptive-metric-for-improved-few-shot-learning.pdf), where 36 coarse-grained classes were divided into 12 (including 60 fine-grained classes), 4 (including 20 fine-grained classes), 4 (including 20 fine-grained classes), for meta-training, meta-validation and meta-testing, respectively, and each class contains 600 images. 
 
 ### CIFAR-FS dataset (not in paper)
-CIFAR-FS was also built upon CIFAR100,proposed in [here](https://arxiv.org/pdf/1805.08136.pdf). It contains 64, 16, 20 classes for training, validation and testing.
+CIFAR-FS was also built upon CIFAR100,proposed in [here](https://arxiv.org/pdf/1805.08136.pdf). There are 100 fine-grained classes and 20 coarse-grained classes. The respective training/validation/test splits consist of 20/11/13 coarse-grained classes, consisting of 64/16/20 fine-grained classes. Their coarse-grained classes are shared.
 
 
 
