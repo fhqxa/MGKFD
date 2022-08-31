@@ -21,18 +21,6 @@ Please click the Google Drive [link](https://drive.google.com/drive/folders/1sXJ
 following datasets, or running the downloading bash scripts in folder `datasets/` to download.
 
 
-### TieredImageNet Dataset
-TieredImageNet is also a subset of ImageNet, which includes 608 classes from 34 super-classes. Compared with  miniImageNet, the splits of meta-training(20), meta-validation(6) and meta-testing(8) are set according to the super-classes to enlarge the domain difference between  training and testing phase. The dataset also include more images for training and evaluation (779,165 images in total).
-
-
-### FC100 Dataset
-FC100 is a few-shot classification dataset built on CIFAR100. We follow the split division proposed in [TADAM](https://papers.nips.cc/paper/7352-tadam-task-dependent-adaptive-metric-for-improved-few-shot-learning.pdf), where 36 coarse-grained classes were divided into 12 (including 60 fine-grained classes), 4 (including 20 fine-grained classes), 4 (including 20 fine-grained classes), for meta-training, meta-validation and meta-testing, respectively, and each class contains 600 images. 
-
-### CIFAR-FS dataset (not in paper)
-CIFAR-FS was also built upon CIFAR100,proposed in [here](https://arxiv.org/pdf/1805.08136.pdf). There are 100 fine-grained classes and 20 coarse-grained classes. The respective training/validation/test splits consist of 20/11/13 coarse-grained classes, consisting of 64/16/20 fine-grained classes. Their coarse-grained classes are shared.
-
-
-
 ## Acknowledgment
 Our project references the codes in the following repos.
 - [DeepEMD](https://git.io/DeepEMD)
