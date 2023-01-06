@@ -66,7 +66,7 @@ class HHGLCM(nn.Module):
 
             lt = x[:,:,:mc,:nc]
             rt = x[:,:,-mc:,:nc]
-            x[:,:,int((m-mc)/2)-1:mc+int((m-mc)/2)-1,int((n-nc)/2)-1:nc+int((n-nc)/2)-1]
+            x[:,:,int((m-mc)/2):mc+int((m-mc)/2)+2,int((n-nc)/2):nc+int((n-nc)/2)+2]
             lb = x[:,:,:mc,-nc:]
             rb = x[:,:,-mc:,-nc:]
 
