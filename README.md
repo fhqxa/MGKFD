@@ -1,8 +1,8 @@
-# Hierarchical Few-shot Learning via Multi-granularity Global-local Feature Cross-measure Mechanism
+# Few-shot Learning with Multi-Granularity Knowledge Fusion and Decision-Making
 
 PyTorch implementation of 
 
-**HGLCM achieves new state-of-the-art performance on five few-shot learning benchmarks with significant advantages. The result is obtained without using any extra data for training or testing.**
+**MGKFD achieves new state-of-the-art performance on five few-shot learning benchmarks with significant advantages. The result is obtained without using any extra data for training or testing.**
 
 
 ## Prerequisites
