@@ -5,7 +5,7 @@ from .emd_utils import *
 from .resnet import ResNet
 
 
-class HHGLCM(nn.Module):
+class MGKFD(nn.Module):
 
     def __init__(self, args, mode='meta',grain = 'fine'):
         super().__init__()
