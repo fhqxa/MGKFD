@@ -5,7 +5,7 @@ import torch.nn as nn
 from Models.dataloader.samplers import CategoriesSampler
 from Models.utils import *
 from Models.dataloader.data_utils import *
-from Models.models.Network import HGLCM
+from Models.models.Network import MGKFD
 from torch.utils.tensorboard import SummaryWriter
 import tqdm
 import time 
@@ -76,7 +76,7 @@ Dataset=set_up_datasets(args)
 
 # model
 args.pretrain_dir=osp.join(args.pretrain_dir,'%s/128-0.1000-30-0.20/max_acc.pth'%(args.dataset))
-model = HGLCM(args)
+model = MGKFD(args)
 model = load_model(model, args.pretrain_dir)
 model = nn.DataParallel(model, list(range(num_gpu)))
 model = model.cuda()
